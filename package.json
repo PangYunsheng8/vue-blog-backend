@@ -25,6 +25,8 @@
     "sequelize": "^5.19.4"
   },
   "devDependencies": {
+    "dompurify": "^2.0.6",
+    "jsdom": "^15.1.1",
     "nodemon": "^1.19.1"
   }
 }
