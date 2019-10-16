@@ -112,9 +112,6 @@ router.get('/tag/:id', async (ctx) =>{
 router.post('/', async (ctx)=>{
     let {title, target, content} = ctx.request.body
     let {userId} = ctx.session
-    if (!userId) {
-        userId = 1
-    }
     let article = await Article.create({title, target, content, userId})
     ctx.body = {
         err: 0,
